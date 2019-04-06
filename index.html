@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<style>
+  #main {
+    font-family:'Roboto Condensed', sans-serif;
+    color: #262626;
+    background-color:#fff5e6;
+    font-size:17px;
+  }
+  li {
+   margin:18px auto;
+}
+img {
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:40% auto;
+  }
+#img-caption {
+  text-align:center;
+  margin-bottom:20px;
+}
+#tribute-info {
+    background-color:#ffe0b3;
+    grid-area:content;
+
+}
+#img-div {
+  background-color:#ffebcc;
+  grid-area:img;
+}
+h2{
+  margin-left:1%;
+}
+h1,.margin {
+  text-align:center;
+}
+#footer {
+  background-color:#ffc266;
+  grid-area:footer;
+  text-align:center;
+}
+#header {
+  grid-area:header;
+}
+#grid {
+  display:grid;
+  width:100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas:
+      "header"
+      "img"
+      "content"
+      "footer";
+}
+@media (min-width: 600px){
+    #grid{
+      grid-template-columns: 80% 1fr;
+      grid-template-rows:20%  100% 1fr;
+      grid-template-areas:
+        "header header"
+        "content img"
+        "footer footer";
+    }
+  }
+</style>
+<div id="main">
+  <head>
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  </head>
+  <div id="grid">
+   <div class="header">
+   <h1 id="title">Michael Jordan</h1>
+   <p class="margin">The man who changed sport</p>
+   </div>
+   <div id="img-div">
+     <img id="image"src="http://haute-giving.com/wp-content/uploads/2016/08/p1_153_1776.png"alt="Michael Jordan">
+     <figcaption id="img-caption">Michael Jordan in his prime </figcaption>
+
+   </div>
+   <div id="tribute-info">
+     <h2>Life time line:</h2>
+     <p><ul>
+     <li><b>1963</b> - Born in Brooklyn, New York.</li>
+     <li><b>1981</b> - Gets a scholarship from North Carolina.</li>
+     <li><b>1984</b> - Leaves the University to enter the NBA Draft.</li><li><b>1984</b> - Gets selected by the Chicago Bulls.</li>
+     <li><b>1985</b> - Wins NBA Rookie of the year and the Air Jordan I's get released by Nike.</li>
+     <li><b>1991</b> - Gets nominated finals Most Valuable Player (MVP) as the bulls defeat the Los Angeles Lakers, to win their first title.</li>
+     <li><b>1992</b> - Gets nominated finals MVP and wins its second consecutive NBA title.</li>
+     <li><b>1993</b> - Gets nominated for the third consecutive time finals MVP and the Bulls become the first franchise in 27 years to win three consecutive titles.	 </li>
+     <li><b>1993</b> - Stuns the basketball world by retiring but this is short-lived.</li>
+     <li><b>1996</b> - Wins another time the finals MVP and Space Jam gets released.</li>
+     <li><b>1997</b> - Gets nominated for the fifth time finals MVP, becoming the player with most MVPs of all time.</li>
+     <li><b>1998</b> - Wins for the sixth time finals MVP.</li>
+     <li><b>2003</b> - Announces his retirement from the NBA.</li>
+     </ul>
+     </div>
+   <div id="footer"><p>Learn more about <a href="https://en.wikipedia.org/wiki/Michael_Jordan" id="tribute-link"target="_blank">Michael Jordan</a></p>
+   </div>
+ </div>
+
+
+</html>
